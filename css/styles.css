@@ -129,7 +129,11 @@ header a:hover{
 }
 
 #nuestros-servicios .carta {
-
+background-position: center;
+background-size: cover;
+padding: 50px;
+margin: 20px;
+border-radius: 15px;
 }
 
 .carta:first-child {
@@ -138,7 +142,7 @@ header a:hover{
         rgba(0,0,0,0.5),   
         rgba(0,0,0,0.5)
     )
-    ,url(../multimedia/ref1.jpeg)
+    ,url(/multimedia/ref4.jpeg)
 
 }
 
