@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    margin: 0;
 }
 
 html{
@@ -18,7 +19,8 @@ h2 { font-size: 2.7em;   text-align: center;}
 
 h3 {font-size: 2em;}
 
-p{ font-size: 1.2em;}
+p{ font-size: 1.2em;
+margin: 15px;}
 li {font-size: 1.25em;}
 
 .color-acento {color: violet;}
@@ -106,6 +108,10 @@ header a:hover{
   
 }
 
+#hero button{
+    font-size: 1.55em;
+}
+
 
 #vf-arquitectura .container {
     text-align: center;
@@ -166,4 +172,160 @@ border-radius: 15px;
     )
     ,url(../multimedia/hero.jpeg);
 
+}
+
+#caracteristicas .container {
+    text-align: center;
+    padding: 200px 12px;
+    
+}
+
+#caracteristicas li{
+    margin: 15px 0px;
+    font-weight: bold;
+    list-style-type: none;
+}
+
+#final {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(30,30,30);
+    color: white;
+    height: 80vh;
+}
+
+#final h2{
+    font-size: 9vw;
+}
+
+#final button{
+    font-size: 3vw;
+}
+
+footer {
+    background-color: rgb(230, 230, 230);
+    
+}
+footer p{
+    display: flex;
+    justify-content: flex-end;
+    
+    margin: 0%;
+    padding: 12px;
+    color: rgb(100, 100, 100);
+    
+    
+}
+
+footer .container{
+    height: 200px;
+    
+    
+}
+
+footer .redesSociales{
+display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+}
+
+@media (min-width: 720px) {
+
+    header {
+        position: fixed;
+        width: 100%
+    }
+    header .container {
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+    header nav {
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+
+    }
+
+    #somos-vf .container{
+      display: flex;
+      justify-content: space-evenly
+
+    }
+    #somos-vf .texto {
+        max-width: 600px;
+              width: 50%;
+              padding-left: 15px;
+        text-align: initial;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+   #somos-vf .img-container  {
+    margin: 20px;
+    background-image: url(../multimedia/arquitecta2.jpg);
+background-size: cover;
+background-position: center center;
+height: 400px;
+width: 400px;
+
+    }
+
+#nuestros-servicios .servicios {
+    display: flex;
+justify-content: center;
+
+}
+
+#nuestros-servicios p{
+    display: block;
+    margin-bottom: 30px;
+}
+
+#nuestros-servicios h3{
+    margin-top: 0;
+}
+#nuestros-sercivios .carta {
+    padding: 15px;
+}
+
+#caracteristicas {
+    background-image: url(../multimedia/arquitecta.jpg);
+    background-repeat: no-repeat;
+    margin: 15px;
+    background-size: 500px 500px;
+    background-position: calc(100vw - 700px) 120px;
+}
+#caracteristicas .container {
+   display: flex;
+    text-align: initial;
+
+}
+
+#caracteristicas ul {
+    margin-left: 100px;
+}
+#final h2 {
+    font-size: 5em;
+
+}
+#final button {
+    font-size: 2em;
+}
+
+
+.footer .container {
+    justify-content: flex-end;
+}
+
+
+}
+
+@media (min-width 1200px) {
+    #caracteristicas{
+    background-position-x: calc(100vw - 800px);
+}
 }
